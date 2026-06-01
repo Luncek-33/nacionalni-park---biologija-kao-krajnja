@@ -172,7 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     position:relative;
 }
@@ -1780,6 +1780,218 @@ body{
         left:auto;
         right:auto;
         bottom:auto;
+    }
+}
+/* ===================================
+   MOBILE OPTIMIZATION
+=================================== */
+
+@media(max-width:768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* HERO */
+
+    .hero{
+        background-attachment:scroll;
+        padding:220px 20px 80px;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem !important;
+        line-height:1.2;
+        display:block;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-btn{
+        width:100%;
+        max-width:320px;
+        text-align:center;
+    }
+
+    /* ABOUT */
+
+    .about-section{
+        margin:80px auto;
+        gap:40px;
+    }
+
+    .about-text h2{
+        font-size:2rem;
+    }
+
+    .about-image img{
+        border-radius:25px;
+    }
+
+    /* FEATURES */
+
+    .features-container{
+        grid-template-columns:1fr;
+    }
+
+    .feature-card{
+        padding:40px 30px;
+    }
+
+    .feature-card h3{
+        font-size:1.6rem;
+    }
+
+    /* STATS */
+
+    .stats-section{
+        gap:20px;
+    }
+
+    .stat-box{
+        width:100%;
+        max-width:420px;
+    }
+
+    .stat-box h2{
+        font-size:2.8rem;
+    }
+
+    /* SAFETY */
+
+    .safety-experience{
+        margin:120px auto;
+        gap:50px;
+    }
+
+    .safety-left h2{
+        font-size:2.2rem;
+    }
+
+    .safety-main-text{
+        font-size:1rem;
+    }
+
+    .floating-box{
+        padding:30px;
+    }
+
+    .floating-box h3{
+        font-size:3rem;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials-modern{
+        margin:120px auto;
+    }
+
+    .testimonials-modern .section-header h2{
+        font-size:2.2rem;
+    }
+
+    .testimonial-big{
+        padding-left:0;
+    }
+
+    .quote-mark{
+        display:none;
+    }
+
+    .testimonial-big p{
+        font-size:1.1rem;
+        line-height:1.8;
+    }
+
+    /* CONTACT */
+
+    .contact-section{
+        margin:120px auto;
+    }
+
+    .contact-info,
+    .contact-form-box{
+        padding:35px 25px;
+    }
+
+    .contact-info h2{
+        font-size:2rem;
+    }
+
+    .contact-details div{
+        font-size:0.95rem;
+    }
+
+    .contact-details span{
+        width:45px;
+        height:45px;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        padding:18px;
+    }
+
+    /* FOOTER */
+
+    .footer-container{
+        padding:60px 20px;
+    }
+}
+
+@media(max-width:480px){
+
+    .hero{
+        padding-top:260px;
+    }
+
+    .hero-content h1{
+        font-size:2rem !important;
+    }
+
+    .about-text h2,
+    .section-header h2,
+    .safety-left h2,
+    .contact-info h2{
+        font-size:1.8rem;
+    }
+
+    .feature-card{
+        padding:35px 25px;
+    }
+
+    .feature-icon{
+        width:70px;
+        height:70px;
+        font-size:2rem;
+    }
+
+    .stat-box{
+        padding:35px 20px;
+    }
+
+    .stat-box h2{
+        font-size:2.3rem;
+    }
+
+    .floating-box h3{
+        font-size:2.5rem;
+    }
+
+    .testimonial-big p{
+        font-size:1rem;
     }
 }
 </style>

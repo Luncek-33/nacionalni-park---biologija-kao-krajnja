@@ -172,7 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     position:relative;
 }
@@ -1067,6 +1067,103 @@ body{
 
     .product-hero-content h1{
         font-size:2.8rem;
+    }
+}
+/* =========================
+   PHONE FIX (≤600px)
+========================= */
+
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        padding: 12px 15px;
+        gap: 10px;
+    }
+
+    .nav-left,
+    .nav-right {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-left a,
+    .nav-right a {
+        font-size: 13px;
+        padding-left: 8px;
+    }
+
+    .logo-center img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo-center h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 140px 15px 80px;
+        min-height: 90vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .hero-btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+    }
+
+    /* PRODUCT SECTION */
+    .product-section {
+        padding: 80px 5%;
+    }
+
+    .product-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .product-price {
+        font-size: 1.6rem;
+    }
+
+    .product-meta {
+        font-size: 0.95rem;
+    }
+
+    /* FEATURES */
+    .features {
+        padding: 70px 5%;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 60px 20px;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 </style>

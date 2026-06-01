@@ -172,7 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     position:relative;
 }
@@ -1000,6 +1000,123 @@ body{
 
     padding:6px 10px;
     border-radius:999px;
+}
+/* =========================
+   MOBILE FIX (EXTRA CLEAN)
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR FIX */
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        padding: 14px 15px;
+        gap: 10px;
+    }
+
+    .nav-left,
+    .nav-right{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-left a,
+    .nav-right a{
+        font-size: 14px;
+        padding-left: 8px;
+    }
+
+    /* LOGO */
+    .logo-center{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .logo-center img{
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo-center h2{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* HERO */
+    .hero{
+        padding: 140px 15px 80px;
+        min-height: 90vh;
+    }
+
+    .hero-content h1{
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p{
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* BUTTONS */
+    .hero-buttons{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* GRID FIX (ANIMALS) */
+    .endemic-grid{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .endemic-card{
+        border-radius: 14px;
+    }
+
+    .endemic-image{
+        height: 160px;
+    }
+
+    /* FOOTER */
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 50px 15px;
+    }
+
+    .footer-logo{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-box ul{
+        padding: 0;
+    }
+}
+@media (max-width: 480px){
+
+    .hero-content h1{
+        font-size: 2rem;
+    }
+
+    .hero-content p{
+        font-size: 0.9rem;
+    }
+
+    .nav-left a,
+    .nav-right a{
+        font-size: 13px;
+    }
 }
 </style>
 </head>

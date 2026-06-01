@@ -172,7 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     position:relative;
 }
@@ -1067,6 +1067,117 @@ body{
 
     .product-hero-content h1{
         font-size:2.8rem;
+    }
+}
+/* =========================
+   EXTRA MOBILE FIX (FINAL POLISH)
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR - stabilniji layout */
+    .navbar{
+        flex-direction:column;
+        align-items:center;
+        padding:12px 15px;
+        gap:10px;
+    }
+
+    .nav-left,
+    .nav-right{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .nav-left a,
+    .nav-right a{
+        font-size:14px;
+        padding-left:8px;
+    }
+
+    .logo-center h2{
+        font-size:18px;
+        text-align:center;
+    }
+
+    /* HERO */
+    .hero{
+        padding:140px 15px 80px;
+        background-attachment:scroll;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+        letter-spacing:1px;
+    }
+
+    .hero-content p{
+        font-size:0.95rem;
+        line-height:1.6;
+    }
+
+    .hero-btn{
+        width:100%;
+        max-width:280px;
+        text-align:center;
+    }
+
+    /* PRODUCT GRID */
+    .product-grid{
+        gap:30px;
+    }
+
+    .product-info h2{
+        font-size:2rem;
+    }
+
+    .product-price{
+        font-size:1.6rem;
+    }
+
+    /* FEATURES */
+    .features{
+        padding:70px 20px;
+    }
+
+    .feature-card{
+        text-align:center;
+        padding:22px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* HERO SMALL PHONES */
+    .hero-content h1{
+        font-size:1.8rem;
+    }
+
+    .hero-content p{
+        font-size:0.9rem;
+    }
+
+    /* PRODUCT */
+    .product-info h2{
+        font-size:1.6rem;
+    }
+
+    .product-meta{
+        font-size:0.9rem;
+    }
+
+    /* BUTTON */
+    .btn-primary{
+        width:100%;
+        text-align:center;
+    }
+
+    /* NAV LINKS STACK */
+    .nav-left a,
+    .nav-right a{
+        font-size:13px;
     }
 }
 </style>

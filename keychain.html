@@ -172,7 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     position:relative;
 }
@@ -1067,6 +1067,93 @@ body{
 
     .product-hero-content h1{
         font-size:2.8rem;
+    }
+}
+/* =========================
+   EXTRA MOBILE RESPONSIVE FIXES
+========================= */
+
+@media (max-width: 768px) {
+
+    /* HERO */
+    .hero-content h1{
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .hero-btn{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    /* PRODUCT SECTION */
+    .product-section{
+        padding: 80px 20px;
+    }
+
+    .product-info h2{
+        font-size: 2rem;
+    }
+
+    .product-price{
+        font-size: 1.6rem;
+    }
+
+    .product-meta{
+        font-size: 0.95rem;
+    }
+
+    /* FEATURES */
+    .features{
+        padding: 80px 20px;
+    }
+
+    .features-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feature-card{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* HERO SMALL PHONE */
+    .hero-content h1{
+        font-size: 1.9rem;
+    }
+
+    .hero-content p{
+        font-size: 0.95rem;
+    }
+
+    /* PRODUCT */
+    .product-price{
+        font-size: 1.4rem;
+    }
+
+    .btn-primary{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* IMAGE FIX */
+    .product-gallery img{
+        border-radius: 16px;
+    }
+
+    /* NAVBAR TEXT FIX */
+    .logo-center h2{
+        font-size: 18px;
+        text-align: center;
     }
 }
 </style>

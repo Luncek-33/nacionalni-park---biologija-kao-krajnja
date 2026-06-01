@@ -172,7 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     position:relative;
 }
@@ -880,6 +880,119 @@ body{
     background:linear-gradient(135deg,#38bdf8,#2563eb);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+}
+/* =========================
+   MOBILE FIXES
+========================= */
+
+@media (max-width: 768px){
+
+    /* NAVBAR */
+    .navbar{
+        flex-direction: column;
+        padding: 15px 15px;
+        gap: 10px;
+    }
+
+    .nav-left,
+    .nav-right{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo-center{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .logo-center img{
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo-center h2{
+        font-size: 18px;
+    }
+
+    /* HERO */
+    .hero{
+        padding: 180px 15px 80px;
+    }
+
+    .hero-content h1{
+        font-size: 2.3rem;
+        line-height: 1.2;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p{
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ACTIVITIES */
+    .activities-section{
+        width: 95%;
+        margin: 80px auto;
+    }
+
+    .activities-header h2{
+        font-size: 1.8rem;
+    }
+
+    .activities-list li{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .activity-price{
+        font-size: 1.3rem;
+    }
+
+    /* FOOTER */
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-logo{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px){
+
+    .hero-content h1{
+        font-size: 1.9rem;
+    }
+
+    .hero-content p{
+        font-size: 0.9rem;
+    }
+
+    .activities-header h2{
+        font-size: 1.5rem;
+    }
+
+    .hero-btn{
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
 }
 </style>
 </head>

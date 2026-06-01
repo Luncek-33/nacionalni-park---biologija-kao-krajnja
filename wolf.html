@@ -172,7 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     position:relative;
 }
@@ -1067,6 +1067,102 @@ body{
 
     .product-hero-content h1{
         font-size:2.8rem;
+    }
+}
+/* =========================
+   MOBILE FIXES (SHOP PAGE)
+========================= */
+
+@media(max-width:768px){
+
+    /* HERO */
+    .hero-content h1{
+        font-size:2.4rem;
+        line-height:1.2;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    /* PRODUCT HERO (ako ga koristiš na drugim stranicama) */
+    .product-hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .product-hero-content p{
+        font-size:1rem;
+    }
+
+    /* PRODUCT GRID - već ima, ali pojačano */
+    .product-grid{
+        gap:30px;
+    }
+
+    /* PRODUCT INFO TEXT ALIGN */
+    .product-info{
+        text-align:center;
+    }
+
+    .product-price{
+        font-size:1.6rem;
+    }
+
+    /* BUTTON */
+    .btn-primary{
+        width:100%;
+        text-align:center;
+    }
+
+    /* FEATURES GRID */
+    .features-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .feature-card{
+        padding:22px;
+    }
+
+    /* NAVBAR FIX (bitno) */
+    .navbar{
+        flex-direction:column;
+        padding:14px 15px;
+        gap:10px;
+    }
+
+    .nav-left,
+    .nav-right{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .logo-center h2{
+        font-size:18px;
+    }
+
+    .logo-center img{
+        width:55px;
+        height:55px;
+    }
+}
+@media(max-width:480px){
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .product-section{
+        padding:80px 20px;
+    }
+
+    .product-meta{
+        font-size:0.9rem;
+    }
+
+    .feature-card h3{
+        font-size:1.1rem;
     }
 }
 </style>

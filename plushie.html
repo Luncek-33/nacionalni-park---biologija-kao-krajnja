@@ -172,7 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     position:relative;
 }
@@ -1067,6 +1067,137 @@ body{
 
     .product-hero-content h1{
         font-size:2.8rem;
+    }
+}
+/* =========================
+   MOBILE FIX - PLUSH PAGE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar{
+        flex-direction:column;
+        padding:12px 15px;
+        gap:10px;
+    }
+
+    .nav-left,
+    .nav-right{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .nav-left a,
+    .nav-right a{
+        font-size:14px;
+        padding-left:8px;
+    }
+
+    .logo-center{
+        flex-direction:column;
+        gap:6px;
+    }
+
+    .logo-center h2{
+        font-size:18px;
+    }
+
+    /* HERO */
+    .hero{
+        padding:140px 15px 80px;
+        background-attachment:scroll;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+        line-height:1.2;
+    }
+
+    .hero-content p{
+        font-size:0.95rem;
+        line-height:1.6;
+    }
+
+    .hero-btn{
+        width:100%;
+        max-width:260px;
+        text-align:center;
+    }
+
+    /* PRODUCT GRID */
+    .product-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .product-info{
+        text-align:center;
+    }
+
+    .product-info h2{
+        font-size:2rem;
+    }
+
+    .product-price{
+        font-size:1.6rem;
+    }
+
+    .product-meta{
+        font-size:0.95rem;
+        text-align:left;
+        display:inline-block;
+    }
+
+    /* FEATURES */
+    .features{
+        padding:70px 20px;
+    }
+
+    .features-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-card{
+        text-align:center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* HERO SMALL PHONES */
+    .hero-content h1{
+        font-size:1.8rem;
+    }
+
+    .hero-content p{
+        font-size:0.9rem;
+    }
+
+    /* BUTTON */
+    .btn-primary{
+        width:100%;
+    }
+
+    .hero-btn{
+        width:100%;
+    }
+
+    /* NAV LINKS */
+    .nav-left a,
+    .nav-right a{
+        font-size:13px;
+    }
+
+    /* PRODUCT */
+    .product-info h2{
+        font-size:1.6rem;
+    }
+
+    .product-price{
+        font-size:1.4rem;
     }
 }
 </style>

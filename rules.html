@@ -172,7 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     position:relative;
 }
@@ -1057,6 +1057,108 @@ body{
 .live-panel:hover{
     transform:translateY(-6px);
     transition:0.4s;
+}
+/* =========================
+   MOBILE FIX (EXTRA CLEAN UP)
+========================= */
+
+@media (max-width: 768px){
+
+    /* HERO */
+    .hero{
+        background-attachment: scroll; /* iOS fix */
+        padding: 140px 20px 80px;
+    }
+
+    .hero-content h1{
+        font-size: 2.4rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p{
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .hero-btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* SECTION TITLE */
+    .section-title h2{
+        font-size: 1.8rem;
+    }
+
+    /* RULES GRID → 1 COLUMN */
+    .rules-grid{
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .rules-column{
+        padding-left: 20px;
+    }
+
+    .rules-column h3{
+        font-size: 1.2rem;
+    }
+
+    .rules-column li{
+        font-size: 0.95rem;
+        padding-left: 40px;
+    }
+
+    /* CONTROL PANELS → STACK */
+    .control-section{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .status-panel,
+    .live-panel{
+        padding: 30px;
+        border-radius: 25px;
+    }
+
+    .panel-header h2{
+        font-size: 1.5rem;
+    }
+
+    /* LIVE GRID → 1 COLUMN */
+    .live-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* NAVBAR already handled, but tighten spacing */
+    .nav-left a,
+    .nav-right a{
+        font-size: 14px;
+        padding-left: 8px;
+    }
+
+    .logo-center h2{
+        font-size: 18px;
+    }
+}
+@media (max-width: 480px){
+
+    .hero-content h1{
+        font-size: 2rem;
+    }
+
+    .rules-header h2{
+        font-size: 1.6rem;
+    }
+
+    .status-panel,
+    .live-panel{
+        padding: 22px;
+    }
+
+    .footer-container{
+        gap: 25px;
+    }
 }
 </style>
 </head>

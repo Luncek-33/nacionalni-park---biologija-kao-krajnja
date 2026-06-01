@@ -172,7 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
+    background-attachment:scroll;
 
     position:relative;
 }
@@ -1111,6 +1111,134 @@ body{
 }
 .card::before{
     pointer-events: none;
+}
+/* =========================
+   MOBILE RESPONSIVE FIX (SHOP PAGE)
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    .nav-left,
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo-center {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .logo-center img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo-center h2 {
+        font-size: 18px;
+    }
+
+    /* HERO */
+    .hero-content h1 {
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        display: block;
+    }
+
+    /* CARDS */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    /* STATS */
+    .shop-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-box {
+        width: 90%;
+    }
+
+    /* BEST SELLER */
+    .best-seller {
+        flex-direction: column;
+        padding: 25px;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .best-image img {
+        height: 320px;
+    }
+
+    .best-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .best-features {
+        grid-template-columns: 1fr;
+    }
+
+    .best-buttons {
+        flex-direction: column;
+    }
+
+    .shop-btn,
+    .details-btn {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+
+    .card-content button {
+        width: 100%;
+    }
 }
 </style>
 </head>

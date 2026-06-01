@@ -172,8 +172,7 @@ body{
 
     background-size:cover;
     background-position:center;
-    background-attachment:fixed;
-
+background-attachment:scroll;
     position:relative;
 }
 
@@ -885,6 +884,163 @@ body{
 @keyframes shineOut{
     0%{ left:120%; }
     100%{ left:-40%; }
+}
+
+/* =========================
+   EXTRA MOBILE FIXES
+========================= */
+
+@media (max-width: 600px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    /* NAVBAR */
+
+    .navbar{
+        position:relative;
+        padding:15px;
+    }
+
+    .nav-left,
+    .nav-right{
+        gap:10px;
+    }
+
+    .nav-left a,
+    .nav-right a{
+        font-size:14px;
+        padding-left:8px;
+    }
+
+    .logo-center img{
+        width:55px;
+        height:55px;
+    }
+
+    .logo-center h2{
+        font-size:18px;
+        text-align:center;
+    }
+
+    /* HERO */
+
+    .hero{
+        padding:60px 15px;
+        min-height:80vh;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:2rem !important;
+        line-height:1.2;
+        display:block;
+    }
+
+    .hero-content p{
+        font-size:0.95rem;
+        line-height:1.7;
+        margin-top:20px;
+    }
+
+    .hero-btn{
+        width:100%;
+        max-width:300px;
+    }
+
+    /* SECTION TITLE */
+
+    .section-title{
+        margin-top:60px;
+        margin-bottom:40px;
+    }
+
+    .section-title h2{
+        font-size:1.8rem;
+    }
+
+    .section-title p{
+        font-size:0.95rem;
+    }
+
+    /* CARDS */
+
+    .container{
+        width:95%;
+        gap:25px;
+    }
+
+    .card{
+        width:100%;
+        max-width:none;
+    }
+
+    .card img{
+        height:220px;
+    }
+
+    .card-content{
+        padding:22px;
+    }
+
+    .card-content h3{
+        font-size:1.4rem;
+    }
+
+    .card-content p{
+        font-size:0.95rem;
+    }
+
+    /* FOOTER */
+
+    .footer-container{
+        padding:50px 20px;
+    }
+
+    .footer-logo img{
+        width:70px;
+        height:70px;
+    }
+
+    .footer-logo h2{
+        font-size:1.6rem;
+    }
+
+    .footer-box h3{
+        font-size:1.2rem;
+    }
+
+    .footer-box p,
+    .footer-box a{
+        font-size:0.95rem;
+    }
+}
+
+/* MALI TELEFONI */
+
+@media (max-width: 400px){
+
+    .hero-content h1{
+        font-size:1.7rem !important;
+    }
+
+    .nav-left,
+    .nav-right{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .logo-center{
+        margin:10px 0;
+    }
+
+    .card img{
+        height:180px;
+    }
 }
 
 </style>
