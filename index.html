@@ -1042,7 +1042,40 @@ background-attachment:scroll;
         height:180px;
     }
 }
+@media (max-width: 600px){
 
+    /* FORCE NAVBAR BACKGROUND FOR READABILITY */
+    .navbar{
+        background:rgba(255,255,255,0.98) !important;
+        backdrop-filter:blur(10px);
+    }
+
+    /* NAV LINKS - MAKE THEM DARK */
+    .nav-left a,
+    .nav-right a{
+        color:#0f172a !important;
+    }
+
+    /* HOVER / ACTIVE STATE */
+    .nav-left a:hover,
+    .nav-right a:hover,
+    .nav-left a.active,
+    .nav-right a.active{
+        color:#2563eb !important;
+    }
+
+    /* underline/line accent */
+    .nav-left a::after,
+    .nav-right a::after{
+        background:#2563eb;
+    }
+
+    /* LOGO TEXT */
+    .logo-center h2{
+        color:#0f172a !important;
+    }
+
+}
 </style>
 </head>
 
